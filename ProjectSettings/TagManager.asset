@@ -68,5 +68,8 @@ TagManager:
   - name: Shadow
     uniqueID: 2460507867
     locked: 0
+  - name: Players
+    uniqueID: 1914123043
+    locked: 0
   m_RenderingLayers:
   - Default
