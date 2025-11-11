@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,10 +127,10 @@ TextureImporter:
       name: base_idle_strip9_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 24
-        width: 13
-        height: 18
+        x: 32
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: base_idle_strip9_1
       rect:
         serializedVersion: 2
-        x: 138
-        y: 24
-        width: 13
-        height: 18
+        x: 128
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: base_idle_strip9_2
       rect:
         serializedVersion: 2
-        x: 234
-        y: 24
-        width: 13
-        height: 18
+        x: 224
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: base_idle_strip9_3
       rect:
         serializedVersion: 2
-        x: 330
-        y: 24
-        width: 14
-        height: 17
+        x: 320
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: base_idle_strip9_4
       rect:
         serializedVersion: 2
-        x: 426
-        y: 24
-        width: 14
-        height: 17
+        x: 416
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: base_idle_strip9_5
       rect:
         serializedVersion: 2
-        x: 522
-        y: 24
-        width: 13
-        height: 17
+        x: 512
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: base_idle_strip9_6
       rect:
         serializedVersion: 2
-        x: 618
-        y: 24
-        width: 13
-        height: 17
+        x: 608
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: base_idle_strip9_7
       rect:
         serializedVersion: 2
-        x: 714
-        y: 24
-        width: 13
-        height: 17
+        x: 704
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: base_idle_strip9_8
       rect:
         serializedVersion: 2
-        x: 810
-        y: 24
-        width: 13
-        height: 18
+        x: 800
+        y: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 069fd156565f3884b827899a93869d34
     internalID: 0
     vertices: []
     indices: 
