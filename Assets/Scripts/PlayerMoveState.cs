@@ -1,21 +1,12 @@
 using UnityEngine;
 
-public class PlayerMoveController : PlayerController
+public class PlayerMoveState : PlayerState
 {
     [SerializeField] private float moveSpeed = 120f;
     private Vector2 movement;
-    private PlayerHurtController hurtController;
 
-    protected override void Awake()
+    public override void UpdateState()
     {
-        base.Awake();
-        hurtController = GetComponent<PlayerHurtController>();
-    }
-
-    void Update()
-    {
-        if (!isActive) return;
-
         movement.Set(0, 0);
         movement.x = -CheckKeyPress(KeyCode.A) + CheckKeyPress(KeyCode.D);
         movement.y = -CheckKeyPress(KeyCode.S) + CheckKeyPress(KeyCode.W);
@@ -26,25 +17,10 @@ public class PlayerMoveController : PlayerController
         SetAnimatorState();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void ExitState()
     {
-        GameObject other = collision.gameObject;
-        if (other.CompareTag("NPC"))
-        {
-            NPCController npc = other.GetComponent<NPCController>();
-            npc.OnCollision(this);
-        }
-        ;
+        player.lastMovement = movement;
     }
-
-    public override void ToggleState()
-    {
-        base.ToggleState();
-        hurtController.SetDiection(movement);
-        hurtController.isActive = true;
-        hurtController.OnEnterState();
-    }
-
 
     int CheckKeyPress(KeyCode key)
     {
@@ -67,5 +43,4 @@ public class PlayerMoveController : PlayerController
     {
         anim.SetBool("isMoving", movement != Vector2.zero);
     }
-
 }

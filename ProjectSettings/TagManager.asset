@@ -63,13 +63,13 @@ TagManager:
   - name: Objects
     uniqueID: 1091180715
     locked: 0
-  - name: Tree
+  - name: Plants
     uniqueID: 2601031963
     locked: 0
   - name: Shadow
     uniqueID: 2460507867
     locked: 0
-  - name: Players
+  - name: Creatures
     uniqueID: 1914123043
     locked: 0
   m_RenderingLayers:
