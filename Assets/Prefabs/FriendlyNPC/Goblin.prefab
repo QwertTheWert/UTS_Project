@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5058933069898684637
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1707220081691839641, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2899176616611334496, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: negativeAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: aaa2f4aa6d90d574cbdaf906d54147ef, type: 3}
+    - target: {fileID: 2899176616611334496, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: positiveAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 600a471a0894bd64b87a3e5f84122cae, type: 3}
+    - target: {fileID: 3570935369393818829, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cc579943cdee71a4aabc3593bcba4ede, type: 2}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6148442985358658982, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497241745893817891, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_Name
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383827458466932201, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_Size.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383827458466932201, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383827458466932201, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4030792056451597264, guid: 4564f3c1109075041bd1280c67330963, type: 3}
+    - target: {fileID: 8383827458466932201, guid: ee283102e64162a4b935eacbf6396b10, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee283102e64162a4b935eacbf6396b10, type: 3}

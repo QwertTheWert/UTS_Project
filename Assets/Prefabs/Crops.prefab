@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2298656519963166440}
   m_Layer: 0
   m_Name: Crops
-  m_TagString: NPC
+  m_TagString: PlantedCrop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

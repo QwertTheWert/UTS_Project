@@ -1,32 +1,50 @@
+using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] PlayerState startingState;
     public Statistics stats;
     public Vector2 lastMovement;
 
-    private PlayerMoveState moveState;
-    private PlayerHurtState hurtState;
+    [Header("Reference")]
+    [SerializeField] PlayerState startingState;
+    public PlayerActionState actionState;
+    public SpriteRenderer toolSprite;
 
-    private PlayerState activeState;
 
-    private void Awake()
+    PlayerMoveState moveState;
+    PlayerHurtState hurtState;
+
+
+    [NonSerialized] public Rigidbody2D rb;
+    [NonSerialized] public SpriteRenderer sprite;
+    [NonSerialized] public Animator anim;
+    [NonSerialized] public AudioSource audioSource;
+
+    PlayerState activeState;
+
+    void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
+        sprite = rb.GetComponent<SpriteRenderer>();
+        anim = rb.GetComponent<Animator>();
+        audioSource = rb.GetComponent<AudioSource>();
+
         moveState = GetComponent<PlayerMoveState>();
         hurtState = GetComponent<PlayerHurtState>();
 
         Debug.Assert(startingState != null, "Must have a starting state");
         activeState = startingState;
-        activeState.EnterState();
+        activeState.EnterState(0);
     }
 
-    private void Update()
+    void Update()
     {
         activeState.UpdateState();
     }
 
-    public void SetState(string stateName)
+    public void SetState(string stateName, int args = 0)
     {
         PlayerState oldState = activeState;
         switch (stateName)
@@ -37,6 +55,9 @@ public class Player : MonoBehaviour
             case "Move":
                 activeState = moveState;
                 break;
+            case "Action":
+                activeState = actionState;
+                break;
             default: 
                 break;
         }
@@ -44,7 +65,7 @@ public class Player : MonoBehaviour
         if (activeState)
         {
             oldState.ExitState();
-            activeState.EnterState();
+            activeState.EnterState(args);
         }
         else
         {
@@ -52,10 +73,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject other = collision.gameObject;
-        if (other.CompareTag("NPC"))
+        if (other.CompareTag("FriendlyNPC") || other.CompareTag("HostileNPC"))
         {
             NPC npc = other.GetComponent<NPC>();
             npc.OnCollision(this);
