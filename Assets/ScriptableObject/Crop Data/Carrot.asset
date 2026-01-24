@@ -9,6 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fccb127c80517a45b8b397aadc7f8f0, type: 3}
-  m_Name: Statistics
+  m_Script: {fileID: 11500000, guid: 164e9c3d121f11d4abe1fb943fb91aaa, type: 3}
+  m_Name: Carrot
   m_EditorClassIdentifier: 
+  cropPlantImage: {fileID: 21300000, guid: 5af4e288d0464bf48a2a98ef5ee96934, type: 3}
+  cropPickupImage: {fileID: 21300000, guid: 3a2a547b9283f0c45993c78c8c273fde, type: 3}

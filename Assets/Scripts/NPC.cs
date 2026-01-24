@@ -14,7 +14,7 @@ public class NPC : MonoBehaviour
         
     }
 
-    public virtual void OnHurt()
+    public virtual void OnHurt(Player player)
     {
 
     }

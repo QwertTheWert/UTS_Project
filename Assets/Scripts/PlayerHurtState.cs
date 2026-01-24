@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class PlayerHurtState : PlayerState
 {
@@ -10,7 +9,7 @@ public class PlayerHurtState : PlayerState
 
     public override void EnterState(int arg)
     {
-        direction = -player.lastMovement;
+        direction = -player.lastMovement.normalized;
         StartCoroutine(Knockback());
     }
 

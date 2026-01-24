@@ -4,7 +4,6 @@ using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
-    public Statistics stats;
     public Vector2 lastMovement;
 
     [Header("Reference")]
@@ -41,6 +40,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (TutorialUI.isActive) { return;  }
         activeState.UpdateState();
     }
 

@@ -22,9 +22,9 @@ public class FriendlyNPC : NPC
         StartCoroutine(PlayAnimation(true));
     }
 
-    public override void OnHurt()
+    public override void OnHurt(Player player)
     {
-        base.OnHurt();
+        base.OnHurt(player);
         StopAllCoroutines();
         StartCoroutine(PlayAnimation(false));
     }

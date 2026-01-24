@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 1938536683852859215}
   - component: {fileID: 3570935369393818829}
   - component: {fileID: 2899176616611334496}
-  - component: {fileID: 1707220081691839641}
+  - component: {fileID: 8076490370096238935}
   m_Layer: 0
   m_Name: FriendlyNPC
   m_TagString: FriendlyNPC
@@ -304,7 +304,7 @@ MonoBehaviour:
   animalNoise: 
   positiveAudio: {fileID: 0}
   negativeAudio: {fileID: 0}
---- !u!82 &1707220081691839641
+--- !u!82 &8076490370096238935
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,7 +316,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

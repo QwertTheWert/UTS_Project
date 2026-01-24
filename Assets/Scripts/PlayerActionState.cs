@@ -20,6 +20,16 @@ public class PlayerActionState : PlayerState
 
     public override void EnterState(int arg)
     {
+        if (arg == 0)
+        {
+            hitbox.offset = new Vector2(1f, 0.5f);
+            hitbox.radius = 1;
+        } else
+        {
+            hitbox.offset = new Vector2(.75f, 0.125f);
+            hitbox.radius = .75f;
+        }
+
         hitbox.enabled = true;
         player.rb.linearVelocity = Vector3.zero;
         actionType = arg;
@@ -54,9 +64,13 @@ public class PlayerActionState : PlayerState
         {
             NPC npc = collision.CompareTag("FriendlyNPC") ? 
                 collision.GetComponent<FriendlyNPC>() : collision.GetComponent<HostileNPC>();
-            npc.OnHurt();
+            npc.OnHurt(player);
         }
-
+        if (collision.CompareTag("CropPlant") && actionType == 1)
+        {
+            CropPlant cropPlant = collision.GetComponent<CropPlant>();
+            cropPlant.OnShoveled();
+        }
 
     }
 }

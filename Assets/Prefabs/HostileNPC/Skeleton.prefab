@@ -17,9 +17,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 935c24016be300245b71f658458d9b44, type: 3}
     - target: {fileID: 2000879700654512586, guid: a3dd16bc296702a499a2d8387eb9e0af, type: 3}
+      propertyPath: moveSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000879700654512586, guid: a3dd16bc296702a499a2d8387eb9e0af, type: 3}
       propertyPath: deathAudio
       value: 
       objectReference: {fileID: 8300000, guid: 2cd791adf9aa5824ba2f42a2ff19792e, type: 3}
+    - target: {fileID: 2000879700654512586, guid: a3dd16bc296702a499a2d8387eb9e0af, type: 3}
+      propertyPath: knockbackSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 3570935369393818829, guid: a3dd16bc296702a499a2d8387eb9e0af, type: 3}
       propertyPath: m_Controller
       value: 

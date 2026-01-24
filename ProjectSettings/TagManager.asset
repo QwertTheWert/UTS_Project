@@ -6,8 +6,8 @@ TagManager:
   tags:
   - FriendlyNPC
   - HostileNPC
-  - PlantedCrop
-  - HarvestedCrop
+  - CropPlant
+  - CropPickup
   layers:
   - Default
   - TransparentFX
